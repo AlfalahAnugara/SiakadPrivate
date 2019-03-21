@@ -48,7 +48,31 @@
 										<?php echo $guru->Nama ?>
 									</td>
 
-									<td>
+									<td class = "small">
+										<?php echo substr($guru->status_user , 0 , 120) ?>...</td>
+									<td width = "250" >
+										<a href = "<?php echo site_url('guru/guru_view/edit/'.$guru->id)?>"
+										class = "btn btn-small"><i class = "fas fa-edit"></i> Edit </a>
+										<a onclick = "deleteConfirm('<?php echo site_url('guru/guru_view/delete/'.$guru->id)?>')"
+										href = "#!" class = "btn btn-small text-danger"><i class="fas fa-trash"></i>Hapus</a>
+									</td>
+								</tr>
+								<?php endforeach ; ?>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<?php $this->load->view("guru/_partials/footer.php") ?>
+
+			</div>
+		</div>
+
+		<?php $this->load->view("guru/_partials/scrolltop.php") ?>
 										
 									
 
