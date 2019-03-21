@@ -12,7 +12,7 @@ class guru extends CI_Controller {
 
 	public function index() {
 		$data['guru'] = $this->Guru_model->getAll() ;
-		$this->load->view("guru/guru_view" , $data) ;
+		$this->load->view("guru/guru_view/list" , $data) ;
 	}
 
 	public function add() {
