@@ -73,7 +73,8 @@
 		</div>
 
 		<?php $this->load->view("guru/_partials/scrolltop.php") ?>
-										
+		<?php $this->load->view("guru/_partials/modal.php") ?>
+		<?php $this->load->view("guru/_partials/js.php") ?>							
 									
 
 </body>
