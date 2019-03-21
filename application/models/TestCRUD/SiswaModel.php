@@ -54,7 +54,7 @@ class SiswaModel extends CI_Model {
       "alamat" => $this->input->post('input_alamat')
     );
     
-    $this->db->where('nis', $nim);
+    $this->db->where('nim', $nim);
     $this->db->update('siswa', $data); // Untuk mengeksekusi perintah update data
   }
   
