@@ -82,7 +82,37 @@
 							<div class = "form-group">
 							<label for = "gender">Jenis Kelamin*</label>
 							<input class = "form-control"
-							type = "text" name = "nig" placeholder = "NIG baru" />			
+							type = "text" name = "nig" placeholder = "Jenis Kelamin baru" />			
+							</div>
+
+							<div class = "form-group">
+							<label for = "alamat">Alamat*</label>
+							<input class = "form-control"
+							type = "text" name = "alamat" placeholder = "Alamat baru" />			
+							</div>
+
+							<div class = "form-group">
+							<label for = "no_telp">Nomor Telepon*</label>
+							<input class = "form-control"
+							type = "text" name = "no_telp" placeholder = "Nomor Telepon baru" />			
+							</div>
+
+							<div class = "form-group">
+							<label for = "password">Password*</label>
+							<input class = "form-control"
+							type = "text" name = "password" placeholder = "Password baru" />			
+							</div>
+
+							<div class = "form-group">
+							<label for = "id_pelajaran">ID pelajaran*</label>
+							<input class = "form-control"
+							type = "text" name = "id_pelajaran" placeholder = "ID Pelajaran baru" />			
+							</div>
+
+							<div class = "form-group">
+							<label for = "status_user">Status User*</label>
+							<input class = "form-control"
+							type = "text" name = "status_user" placeholder = "Status User baru" />			
 							</div>
 						
 						<input class = "btn btn-success" type = "submit" name="btn" value="save" />
