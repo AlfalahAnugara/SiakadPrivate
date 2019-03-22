@@ -54,8 +54,8 @@
 
 				<div class = "card-body">
 
-					<form action = "<?php base_url('guru/guru_view/add')?>" method = "post" enctype = "multipart/form-data" >
-						<div class = "form-group">
+					<form action = "http://localhost:100/SiakadPrivate/guru/add" method = "post" enctype = "multipart/form-data" >
+							<div class = "form-group">
 							<label for = "nig">NIG*</label>
 							<input class = "form-control"
 							type = "text" name = "nig" placeholder = "NIG baru" />			
@@ -82,7 +82,7 @@
 							<div class = "form-group">
 							<label for = "gender">Jenis Kelamin*</label>
 							<input class = "form-control"
-							type = "text" name = "nig" placeholder = "Jenis Kelamin baru" />			
+							type = "text" name = "gender" placeholder = "Jenis Kelamin baru" />			
 							</div>
 
 							<div class = "form-group">

@@ -21,8 +21,8 @@ class guru extends CI_Controller {
 		$validation->set_rules($guru->rules()) ;
 
 		if ($validation->run()) {
-			$guru->save() ;
-			$this->session->set_flashdata('success' , 'Berhasil disimpan') ;
+		$guru->save() ;
+		$this->session->set_flashdata('success' , 'Berhasil disimpan') ;
 		}
 
 		$this->load->view("admin/tambahguru") ;
