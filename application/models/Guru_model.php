@@ -3,7 +3,7 @@
 class Guru_model extends CI_Model {
 	private $_table = "guru" ;
 
-	public $id ;
+	
 	public $nig ;
 	public $nama ;
 	public $tgl_lahir ;
@@ -40,7 +40,6 @@ class Guru_model extends CI_Model {
 
 	public function save() {
 		$post = $this->input->post() ;
-		$this->id = uniqid() ;
 		$this->nig = $post["nig"] ;
 		$this->nama = $post["nama"] ;
 		$this->tgl_lahir = $post["tgl_lahir"] ;
