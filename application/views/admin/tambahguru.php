@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
 <section class="content">
 <h1> Tambah Siswa</h1> 
 <form>
@@ -34,4 +34,70 @@
 	</form>
    </div>
 </div>
-</section>
+</section> -->
+
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body id = "page-top">
+
+		<div id = "content-wrapper" >
+
+			<div class = "container-fluid">
+
+			<?php if ($this->session->flashdata('success')): ?>
+			<div class = "alert alert-success" role = "alert">
+				<?php echo $this->session->flashdata('success') ; ?>
+			<div>
+			<?php endif ; ?>
+
+				<div class = "card-body">
+
+					<form action = "<?php base_url('guru/guru_view/add')?>" method = "post" enctype = "multipart/form-data" >
+						<div class = "form-group">
+							<label for = "nig">NIG*</label>
+							<input class = "form-control"
+							type = "text" name = "nig" placeholder = "NIG baru" />			
+							</div>
+
+							<div class = "form-group">
+							<label for = "nig">Nama*</label>
+							<input class = "form-control"
+							type = "text" name = "nig" placeholder = "NIG baru" />			
+							</div>
+
+							<div class = "form-group">
+							<label for = "nig">NIG*</label>
+							<input class = "form-control"
+							type = "text" name = "nig" placeholder = "NIG baru" />			
+							</div>
+
+							<div class = "form-group">
+							<label for = "nig">NIG*</label>
+							<input class = "form-control"
+							type = "text" name = "nig" placeholder = "NIG baru" />			
+							</div>
+
+							<div class = "form-group">
+							<label for = "nig">NIG*</label>
+							<input class = "form-control"
+							type = "text" name = "nig" placeholder = "NIG baru" />			
+							</div>
+						
+						<input class = "btn btn-success" type = "submit" name="btn" value="save" />
+						</form>
+					
+					</div>
+
+					
+
+
+				</div>
+			
+			</div>
+
+		</div>
+
+</body>
+</html>
