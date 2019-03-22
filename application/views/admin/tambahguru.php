@@ -62,25 +62,25 @@
 							</div>
 
 							<div class = "form-group">
-							<label for = "nig">Nama*</label>
+							<label for = "nama">Nama*</label>
 							<input class = "form-control"
-							type = "text" name = "nig" placeholder = "NIG baru" />			
+							type = "text" name = "nama" placeholder = "Nama baru" />			
 							</div>
 
 							<div class = "form-group">
-							<label for = "nig">NIG*</label>
+							<label for = "tgl_lahir">Tanggal Lahir*</label>
 							<input class = "form-control"
-							type = "text" name = "nig" placeholder = "NIG baru" />			
+							type = "text" name = "tgl_lahir" placeholder = "Tanggal Lahir baru" />			
 							</div>
 
 							<div class = "form-group">
-							<label for = "nig">NIG*</label>
+							<label for = "kota_asl">Kota asal*</label>
 							<input class = "form-control"
-							type = "text" name = "nig" placeholder = "NIG baru" />			
+							type = "text" name = "kota_asl" placeholder = "Kota Asal baru" />			
 							</div>
 
 							<div class = "form-group">
-							<label for = "nig">NIG*</label>
+							<label for = "gender">Jenis Kelamin*</label>
 							<input class = "form-control"
 							type = "text" name = "nig" placeholder = "NIG baru" />			
 							</div>
