@@ -18,14 +18,14 @@ class guru extends CI_Controller {
 	public function add() {
 		$guru = $this->Guru_model ;
 		$validation = $this->form_validation ;
-		$validation->set_rules($product->rules()) ;
+		$validation->set_rules($guru->rules()) ;
 
 		if ($validation->run()) {
 			$guru->save() ;
 			$this->session->set_flashdata('success' , 'Berhasil disimpan') ;
 		}
 
-		$this->load->view("guru/guru_view/new_form") ;
+		$this->load->view("admin/tambahguru") ;
 	}
 
 	public function edit($id = null) {
