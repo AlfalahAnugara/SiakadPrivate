@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	
@@ -21,7 +21,12 @@
 				</div>
 				<div class = "card-body">
 
-			
+				<table width="100%">
+					<br><h2 align="center">Daftar Guru</h2>
+						<thead>
+						<tr align="center">
+							<th><font face ="Calibri"> NIS </font></th>
+
 	
 </body>
 </html>
