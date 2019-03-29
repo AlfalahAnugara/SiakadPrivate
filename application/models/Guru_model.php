@@ -7,7 +7,7 @@ class Guru_model extends CI_Model {
 	public $nig ;
 	public $nama ;
 	public $tgl_lahir ;
-	public $kota_asal;
+	public $kota_asl;
 	public $gender ;
 	public $alamat ;
 	public $no_telp ;
