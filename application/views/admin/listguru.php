@@ -25,8 +25,12 @@
 					<br><h2 align="center">Daftar Guru</h2>
 						<thead>
 						<tr align="center">
-							<th><font face ="Calibri"> NIS </font></th>
-
-	
+							<th><font face ="Calibri">NIG</font></th>
+							<th><font face ="Calibri">Nama</font></th>
+							<th><font face ="Calibri">Tanggal Lahir</font></th>
+							<th><font face ="Calibri">Kota Asal</font></th>
+							<th><font face ="Calibri">Jenis Kelamin</font></th>
+							<th><font face ="Calibri">Alamat</font></th>
+							
 </body>
 </html>
