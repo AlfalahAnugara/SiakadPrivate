@@ -50,6 +50,9 @@
 										<td><p><?= $dosen->alamat?></p></td>
 										<td><p><?= $dosen->no_telp?></p></td>
 										<td><p><?= $dosen->password?></p></td>
+										<td><p><?= $dosen->id_pelajaran?></p></td>
+										<td><p><?= $dosen->status_user?></p></td>
+										<?php echo anchor('guru/edit/'.$dosen->id,'Edit'); ?>
 
 
 							
