@@ -42,7 +42,11 @@
 									foreach($guru as $dosen) :
 									?>
 							<tr>
-									
+										<td><p><?= $dosen->nig?></p></td>
+										<td><p><?= $dosen->nama?></p></td>
+										<td><p><?= $dosen->tgl_lahir?></p></td>
+										<td><p><?= $dosen->kota_asl?></p></td>
+
 							
 </body>
 </html>
