@@ -36,7 +36,7 @@
 </div>
 </section> -->
 
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 </head>
@@ -54,8 +54,8 @@
 
 				<div class = "card-body">
 
-					<form action = "http://localhost:100/SiakadPrivate/guru/add" method = "post" enctype = "multipart/form-data" >
-							<div class = "form-group">
+					<form action = "<?php echo base_url(). 'guru/add'?>" method = "post" enctype = "multipart/form-data" >
+						<div class = "form-group">
 							<label for = "nig">NIG*</label>
 							<input class = "form-control"
 							type = "text" name = "nig" placeholder = "NIG baru" />			
@@ -81,9 +81,9 @@
 
 							<div class = "form-group">
 							<label for = "gender">Jenis Kelamin*</label>
-							<input class = "form-control"
-							type = "text" name = "gender" placeholder = "Jenis Kelamin baru" />			
-							</div>
+							<input type="radio" name="gender" value="L">Laki-Laki
+        					<input type="radio" name="gender" value="P">Perempuann
+        					</div>
 
 							<div class = "form-group">
 							<label for = "alamat">Alamat*</label>
@@ -109,11 +109,21 @@
 							type = "text" name = "id_pelajaran" placeholder = "ID Pelajaran baru" />			
 							</div>
 
-							<div class = "form-group">
+							<div class="form-group">
+            				<label for="Kelas">Status User:</label>
+                			<select class="form-control" name="status_user">
+                    		<option value="" disabled selected>Pilih User</option>
+							<option value="1">Siswa</option>
+							<option value="2">Guru</option>
+							<option value="3">Pegawai</option>
+						</select>
+							</div>
+
+							<!-- <div class = "form-group">
 							<label for = "status_user">Status User*</label>
 							<input class = "form-control"
 							type = "text" name = "status_user" placeholder = "Status User baru" />			
-							</div>
+							</div> -->
 						
 						<input class = "btn btn-success" type = "submit" name="btn" value="save" />
 						</form>
