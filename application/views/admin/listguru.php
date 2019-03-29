@@ -53,6 +53,12 @@
 										<td><p><?= $dosen->id_pelajaran?></p></td>
 										<td><p><?= $dosen->status_user?></p></td>
 										<?php echo anchor('guru/edit/'.$dosen->id,'Edit'); ?>
+											<?php echo anchor('guru/delete/'.$dosen->id,'Hapus'); ?>
+										</td>
+									</tr>
+									<?php endforeach; ?>
+								</tbody>
+							</table>
 
 
 							
