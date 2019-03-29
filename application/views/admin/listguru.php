@@ -31,6 +31,10 @@
 							<th><font face ="Calibri">Kota Asal</font></th>
 							<th><font face ="Calibri">Jenis Kelamin</font></th>
 							<th><font face ="Calibri">Alamat</font></th>
+							<th><font face ="Calibri">No Telepon</font></th>
+							<th><font face ="Calibri">Password</font></th>
+							<th><font face ="Calibri">Id Pelajaran</font></th>
+							<th><font face ="Calibri">Status User</font></th>
 							
 </body>
 </html>
