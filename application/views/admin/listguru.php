@@ -46,6 +46,11 @@
 										<td><p><?= $dosen->nama?></p></td>
 										<td><p><?= $dosen->tgl_lahir?></p></td>
 										<td><p><?= $dosen->kota_asl?></p></td>
+										<td><p><?= $dosen->gender?></p></td>
+										<td><p><?= $dosen->alamat?></p></td>
+										<td><p><?= $dosen->no_telp?></p></td>
+										<td><p><?= $dosen->password?></p></td>
+
 
 							
 </body>
