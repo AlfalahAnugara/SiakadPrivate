@@ -45,7 +45,7 @@ class Home extends CI_Controller{
     public function tambahguru(){
       $data['judul']='Halaman Tambah Guru';
       $this->load->view('template/header',$data);
-      //  $this->load->view('template/sidebar'); 
+      //$this->load->view('template/sidebar'); 
       $this->load->view('admin/tambahguru');
     }
 }
