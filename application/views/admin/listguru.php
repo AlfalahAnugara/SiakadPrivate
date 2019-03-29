@@ -35,6 +35,14 @@
 							<th><font face ="Calibri">Password</font></th>
 							<th><font face ="Calibri">Id Pelajaran</font></th>
 							<th><font face ="Calibri">Status User</font></th>
+
+							</tr>
+						<tbody>
+									<?php
+									foreach($guru as $dosen) :
+									?>
+							<tr>
+									
 							
 </body>
 </html>
