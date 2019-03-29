@@ -2,12 +2,20 @@
 
 class Home extends CI_Controller{
 
+	public function __construct()
+  {
+      parent::__construct();
+      $this->load->helper(array('form', 'url'));
+      $this->load->model("guru_model");
+  }
+
     public function index(){
-      $data['judul']='Selamat Datang Admin';
-      $this->load->view('template/header',$data);
+			$data['guru']=$this->guru_model->getAll();
+      $this->load->view('template/header');
       $this->load->view('template/sidebar'); 
-      $this->load->view('admin/home');
-      $this->load->view('template/footer'); 
+      $this->load->view('admin/listguru' , $data);
+			$this->load->view('template/footer'); 
+			
     }
     public function nilai(){
       $data['judul']='Nilai Siswa';
