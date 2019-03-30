@@ -77,3 +77,9 @@
 						</select>
 							</div>
 
+					<button type = "submit" class = "btn btn-primary">Simpan</button>
+					<button type = "submit" class = "btn btn-danger">Danger</button>
+					</form>
+
+					</div>
+
