@@ -116,7 +116,7 @@
 							<option value="1">Siswa</option>
 							<option value="2">Guru</option>
 							<option value="3">Pegawai</option>
-						</select>
+							</select>
 							</div>
 
 							<!-- <div class = "form-group">
