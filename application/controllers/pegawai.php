@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit ('No direct script access allowed') ;
 
-class admin extends CI_Controller {
+class pegawai extends CI_Controller {
 	public function __construct() {
 
 		parent::__construct() ;
@@ -11,45 +11,45 @@ class admin extends CI_Controller {
 	}
 
 	public function index() {
-		$data['guru'] = $this->Guru_model->getAll() ;
-		$this->load->view("guru/admin_view/list" , $data) ;
+		$data['pegawai'] = $this->pegawai_model->getAll() ;
+		$this->load->view("pegawai/pegawai_view/list" , $data) ;
 	}
 
 	public function add() {
-		$guru = $this->Guru_model ;
+		$pegawai = $this->pegawai_model ;
 		$validation = $this->form_validation ;
-		$validation->set_rules($guru->rules()) ;
+		$validation->set_rules($pegawai->rules()) ;
 
 		if ($validation->run()) {
-		$guru->save() ;
+		$pegawai->save() ;
 		$this->session->set_flashdata('success' , 'Berhasil disimpan') ;
 		}
 
-		$this->load->view("admin/tambahguru") ;
+		$this->load->view("admin/tambahpegawai") ;
 	}
 	public function edit($id = null) {
-		if (!isset($id)) redirect ('guru/guru_view') ;
+		if (!isset($id)) redirect ('pegawai/pegawai_view') ;
 
-		$guru = $this->Guru_model ;
+		$pegawai = $this->pegawai_model ;
 		$validation = $this->form_validation ;
-		$validation->set_rules($guru->rules()) ;
+		$validation->set_rules($pegawai->rules()) ;
 
 		if ($validation->run()) {
-			$guru->update() ;
+			$pegawai->update() ;
 			$this->session->set_flashdata('succes' , 'Berhasil disimpan') ;
 		}
 
-		$data["guru"] = $guru->getById($id) ;
+		$data["pegawai"] = $pegawai->getById($id) ;
 		if (!$data["product"]) show_404() ;
 
-		$this->load->view("guru/guru_view/edit_form" , $data) ;
+		$this->load->view("pegawai/pegawai_view/edit_form" , $data) ;
 	}
 
 	public function delete($id = null) {
 		if (!isset($id)) show_404() ;
 
-		if ($this->Guru_model->delete($id)) {
-			redirect(site_url('admin/guru')) ;
+		if ($this->pegawai_model->delete($id)) {
+			redirect(site_url('admin/pegawai')) ;
 		}
 	}
 }
