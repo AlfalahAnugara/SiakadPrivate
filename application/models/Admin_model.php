@@ -39,3 +39,12 @@ class Guru_model extends CI_Model {
 		$this->gender = $post["gender"] ;
 		$this->db->insert($this->_table , $this) ;
 	}
+
+	public function update() {
+		$post = $this->input->post() ;
+		$this->nip = $post["nip"] ;
+		$this->nama = $post["nama"] ;
+		$this->password = $post["password"] ;
+		$this->gender = $post["gender"] ;
+		$this->db->insert($this->_table , $this , array('id' => $post['id'])) ;
+	}
