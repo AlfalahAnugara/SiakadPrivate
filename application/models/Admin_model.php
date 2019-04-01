@@ -9,3 +9,16 @@ class Guru_model extends CI_Model {
 	public $password ;
 	public $gender ;
 	public $status_user ; 
+
+	public function rules () {
+		return [
+			['field' => 'nip' ,
+			'label' => 'NIP' ,
+			'rules' => 'required'] ,
+
+			['field' => 'nama' ,
+			'label' => 'Nama' ,
+			'rules' => 'required']] ;
+
+			
+	}
