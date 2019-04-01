@@ -14,3 +14,16 @@ class admin extends CI_Controller {
 		$data['guru'] = $this->Guru_model->getAll() ;
 		$this->load->view("guru/admin_view/list" , $data) ;
 	}
+
+	public function add() {
+		$guru = $this->Guru_model ;
+		$validation = $this->form_validation ;
+		$validation->set_rules($guru->rules()) ;
+
+		if ($validation->run()) {
+		$guru->save() ;
+		$this->session->set_flashdata('success' , 'Berhasil disimpan') ;
+		}
+
+		$this->load->view("admin/tambahguru") ;
+	}
