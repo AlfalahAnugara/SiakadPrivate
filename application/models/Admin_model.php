@@ -30,3 +30,12 @@ class Guru_model extends CI_Model {
 	public function getById($id) {
 		return $this->db->get_where($this->_table , ["id"])->row() ;
 	}
+
+	public function save() {
+		$post = $this->input->post() ;
+		$this->nip = $post["nip"] ;
+		$this->nama = $post["nama"] ;
+		$this->password = $post["password"] ;
+		$this->gender = $post["gender"] ;
+		$this->db->insert($this->_table , $this) ;
+	}
