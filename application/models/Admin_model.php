@@ -48,3 +48,10 @@ class Guru_model extends CI_Model {
 		$this->gender = $post["gender"] ;
 		$this->db->insert($this->_table , $this , array('id' => $post['id'])) ;
 	}
+
+	public function delete ($id) {
+		return $this->db->delete($this->_table , array("id" => $id)) ;
+	}
+
+
+}
