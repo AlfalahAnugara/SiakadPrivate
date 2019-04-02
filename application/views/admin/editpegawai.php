@@ -9,4 +9,6 @@
 		</div>
 
 
-<form 
+<form action = "<?php echo base_url("guru/edit/$guru->id")?>" method = "post" enctype="multipart/form-data" >
+
+<input type = "hidden" name = "id" value = "<?php echo $guru->id?>" />
