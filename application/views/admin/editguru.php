@@ -13,7 +13,7 @@
 
 	<input type = "hidden" name = "id" value = "<?php echo $guru->id?>" />
 
-	<div class = "form-group">
+							<div class = "form-group">
 							<label for = "nig">NIG*</label>
 							<input class = "form-control"
 							type = "text" name = "nig" placeholder = "NIG baru" />			
