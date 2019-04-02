@@ -21,11 +21,18 @@
 									?>
 							<tr>
 
-							<td><p><?= $dosen->nig?></p></td>
-							<td><p><?= $dosen->nama?></p></td>
-							<td><p><?= $dosen->tgl_lahir?></p></td>
-										<td><p><?= $dosen->kota_asl?></p></td>
-										<td><p><?= $dosen->gender?></p></td>
+							<td><p><?= $admin->nip?></p></td>
+							<td><p><?= $admin->nama?></p></td>
+							<td><p><?= $admin->password?></p></td>
+							<td><p><?= $admin->gender?></p></td>
+							<td><p><?= $admin->status_user?></p></td>
+							<?php echo anchor('pegawai/edit/'.$admin->id,'Edit'); ?>
+							 <?php echo anchor('pegawai/delete/'.$admin->id,'Hapus'); ?>
+										</td>
+									</tr>
+									<?php endforeach; ?>
+								</tbody>
+							</table>
 	
 </body>
 </html>
