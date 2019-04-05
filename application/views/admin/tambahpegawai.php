@@ -18,7 +18,7 @@
 
 				<form action = "<?php echo base_url(). 'guru/add'?>" method = "post" enctype = "multipart/form-data" >
 						<div class = "form-group">
-							<label for = "nip">nip*</label>
+							<label for = "nip">NIP*</label>
 							<input class = "form-control"
 							type = "text" name = "nip" placeholder = "nip baru" />			
 							</div>
@@ -36,7 +36,7 @@
 							</div>
 
 							<div class = "form-group">
-							<label for = "gender">Gender*</label>
+							<label for = "gender">Jenis Kelamin*</label>
 							<input class = "form-control"
 							type = "text" name = "gender" placeholder = "Gender baru" />			
 							</div>
