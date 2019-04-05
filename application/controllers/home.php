@@ -55,5 +55,10 @@ class Home extends CI_Controller{
       $this->load->view('template/header',$data);
       //$this->load->view('template/sidebar'); 
       $this->load->view('admin/tambahguru');
-    }
+		}
+		public function tambahpegawai() {
+			$data['judul']='Halamana Tambah Pegawai' ;
+			$this->load->view('template/header' ,$data) ;
+			
+		}
 }
