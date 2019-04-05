@@ -6,14 +6,16 @@ class Home extends CI_Controller{
   {
       parent::__construct();
       $this->load->helper(array('form', 'url'));
-      $this->load->model("guru_model");
+			$this->load->model("guru_model");
+			$this->load->model("pegawai_model") ;
   }
 
     public function index(){
 			$data['guru']=$this->guru_model->getAll();
       $this->load->view('template/header');
       $this->load->view('template/sidebar'); 
-      $this->load->view('admin/listguru' , $data);
+			$this->load->view('admin/listguru' , $data);
+			$this->load->view('admin/listpegawai' , $data) ;
 			$this->load->view('template/footer'); 
 			
     }
