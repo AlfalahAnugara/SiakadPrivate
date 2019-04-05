@@ -6,7 +6,7 @@ class pegawai extends CI_Controller {
 	public function __construct() {
 
 		parent::__construct() ;
-		$this->load->model("Admin_model") ;
+		$this->load->model("Pegawai_model") ;
 		$this->load->library('form_validation') ;
 	}
 
@@ -16,7 +16,7 @@ class pegawai extends CI_Controller {
 	}
 
 	public function add() {
-		$pegawai = $this->pegawai_model ;
+		$pegawai = $this->Pegawai_model ;
 		$validation = $this->form_validation ;
 		$validation->set_rules($pegawai->rules()) ;
 
